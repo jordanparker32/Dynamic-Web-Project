@@ -1,2 +1,2 @@
 # Dynamic-Web-Project
-This is our Django project for ITC 241.
+Sometimes finding links for Southern Miss can be a hassle. So why don’t we make a landing page for Southern Miss students? The landing page would be built on top of the Django framework. Using MySql as the database and HTML, CSS, JQuery and PHP on the front end. We will also work to implement both a search bar for Southern Miss, and for a general google searching. Under these search bars are removable buttons
