@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign-Up</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="homeStyleSheet.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!---<script src="homeJS.js"></script>-->
+  <!--jquery ui functions to add draggability-->
+  <script>
+    //current links
+    let links = [
+      "#google",
+      "#twitter",
+      "#facebook",
+      "#reddit",
+      "#github",
+      "#canvas"
+    ];
+    //links chosen by user will be filled when #done is pressed
+    let chosenLinks = [];
+
+    $(function() {
+      $("#google").draggable({
+        cursor: "grabbing",
+        cursorAt: { top: 50, left: 80 }
+      });
+    });
+    $(function() {
+      $("#twitter").draggable({
+        cursor: "grabbing",
+        cursorAt: { top: 50, left: 80 }
+      });
+    });
+    $(function() {
+      $("#facebook").draggable({
+        cursor: "grabbing",
+        cursorAt: { top: 50, left: 80 }
+      });
+    });
+    $(function() {
+      $("#reddit").draggable({
+        cursor: "grabbing",
+        cursorAt: { top: 50, left: 80 }
+      });
+    });
+    $(function() {
+      $("#github").draggable({
+        cursor: "grabbing",
+        cursorAt: { top: 50, left: 80 }
+      });
+    });
+    $(function() {
+      $("#canvas").draggable({
+        cursor: "grabbing",
+        cursorAt: { top: 50, left: 80 }
+      });
+    });
+  </script>
+  <!--Check position of draggable elements to be added to chosenLinks-->
+  <script>
+    $(function() {
+      $("#done").click(function() {
+        //enable disabled continue button after clicking #done
+        document.getElementById("continue").disabled = false;
+        for (var i = 0; i < links.length; i++) {
+          if (links[i] != undefined) {
+            if (
+              $(links[i]).position().left >= 810 &&
+              $(links[i]).position().top >= 200
+            ) {
+              //storing of qualifying links to chosenLinks and removing that link from array
+              chosenLinks.push(links[i]); //push to ChosenLinks
+              var holder = links[i]; //temp var to remove element from page
+              var index = links.indexOf(links[i]); //splice array
+              if (index > -1) {
+                links.splice(index, 1);
+              }
+              $(holder).remove();
+            }
+            console.log("Links: " + links);
+            console.log("Chosen: " + chosenLinks);
+          }
+        }
+      });
+    });
+    //reload the page on click
+    $(document).ready(function() {
+      $("#reset").click(function() {
+        location.reload(true);
+      });
+    });
+  </script>
+
+  <body>
+    <h1>Drag the Websites to the bin that interest you!</h1>
+    <br />
+    <h3>More will be added soon.</h3>
+    <!--Website divs-->
+    <div id="google" class="draggable ui-widget-content">
+      <div id="googleHeader">Click here to move</div>
+      <p>Google</p>
+    </div>
+    <br />
+    <div id="twitter">
+      <div id="twitterHeader">Click here to move</div>
+      <p>Twitter</p>
+    </div>
+
+    <div id="facebook">
+      <div id="facebookHeader">Click here to move</div>
+      <p>Facebook</p>
+    </div>
+
+    <div id="reddit">
+      <div id="redditHeader">Click here to move</div>
+      <p>Reddit</p>
+    </div>
+
+    <div id="github">
+      <div id="githubHeader">Click here to move</div>
+      <p>GitHub</p>
+    </div>
+
+    <div id="canvas">
+      <div id="canvasHeader">Click here to move</div>
+      <p>Canvas</p>
+    </div>
+    <!--Address bin-->
+    <h4>Your Address Bin</h4>
+    <div class="rectangle"></div>
+
+    <div class="addNew"></div>
+
+    <button id="done" type="button">Done</button>
+    <button id="reset" type="button">Reset</button>
+    <!--Enabled after one click of done. Opens link to home.html-->
+    <button
+      id="continue"
+      type="button"
+      disabled
+      onclick="location.href = 'home.html'"
+    >
+      Continue
+    </button>
+    <!--Will be popup form to allow for user created website input -->
+    <!--
+    <form  class="newAddress">
+      Address Name:<br />
+      <input type="text" name="addressName" /><br />
+      URL:<br />
+      <input type="text" name="url" /><br />
+      <input type="Submit" value="submit" />
+    </form>
+    -->
+  </body>
+</html>

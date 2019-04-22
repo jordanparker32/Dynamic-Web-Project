@@ -1,0 +1,201 @@
+html {
+  background-color: #f5f6fa;
+}
+h1 {
+  text-align: center;
+  color: #2f3640;
+  font-family: "Trebuchet MS";
+}
+body {
+  text-align: center;
+  font-family: "Trebuchet MS";
+  color: #2f3640;
+}
+img {
+  padding: 5px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  color: #2f3640;
+}
+.footer {
+  font-family: "Trebuchet MS";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0097e6;
+  color: #e0fbfc;
+  text-align: center;
+}
+
+#google {
+  position: absolute;
+  z-index: 9;
+  background-color: #e0fbfc;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+  opacity: 0.95;
+  text-align: center;
+  top: 200px;
+}
+#googleHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #fe4a49;
+  color: #dcdde1;
+  top: 200px;
+}
+
+#twitter {
+  position: absolute;
+  z-index: 9;
+  background-color: #e0fbfc;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+  opacity: 0.95;
+  text-align: center;
+  top: 300px;
+}
+#twitterHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #0097e6;
+  color: #dcdde1;
+  top: 300px;
+}
+
+#facebook {
+  position: absolute;
+  z-index: 9;
+  background-color: #e0fbfc;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+  opacity: 0.95;
+  text-align: center;
+  top: 400px;
+}
+#facebookHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #273c75;
+  color: #dcdde1;
+  top: 400px;
+}
+
+#reddit {
+  position: absolute;
+  z-index: 9;
+  background-color: #e0fbfc;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+  opacity: 0.95;
+  text-align: center;
+  top: 500px;
+}
+#redditHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #c23616;
+  color: #dcdde1;
+  top: 500px;
+}
+
+#github {
+  position: absolute;
+  z-index: 9;
+  background-color: #e0fbfc;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+  opacity: 0.95;
+  text-align: center;
+  top: 600px;
+}
+#githubHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2f3640;
+  color: #dcdde1;
+  top: 600px;
+}
+
+#canvas {
+  position: absolute;
+  z-index: 9;
+  background-color: #e0fbfc;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+  opacity: 0.95;
+  text-align: center;
+  top: 200px;
+  left: 175px;
+}
+#canvasHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #44bd32;
+  color: #dcdde1;
+  top: 200px;
+  left: 175px;
+}
+h4 {
+  position: absolute;
+  text-align: left;
+  right: 70px;
+  top: 165px;
+}
+h3 {
+  background-color: #00a8ff;
+}
+.rectangle {
+  height: 400px;
+  width: 200px;
+  background-color: #fbc531;
+  position: absolute;
+  top: 210px;
+  right: 25px;
+  border: 2.5px solid #292f36;
+  border-radius: 8px;
+}
+.addNew {
+  height: 50px;
+  width: 50px;
+  background-color: #0097e6;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#done {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+}
+#reset {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  bottom: 80px;
+  right: 130px;
+}
+#continue {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  bottom: 10px;
+  right: 600px;
+}
