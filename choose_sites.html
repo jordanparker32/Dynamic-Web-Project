@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sign-Up</title>
+    <title>Choose Sites</title>
   </head>
   <link rel="stylesheet" type="text/css" href="homeStyleSheet.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -96,7 +96,6 @@
   <body>
     <h1>Drag the Websites to the bin that interest you!</h1>
     <br />
-    <h3>More will be added soon.</h3>
     <!--Website divs-->
     <div id="google" class="draggable ui-widget-content">
       <div id="googleHeader">Click here to move</div>
@@ -131,7 +130,11 @@
     <h4>Your Address Bin</h4>
     <div class="rectangle"></div>
 
-    <div class="addNew"></div>
+    <div class="addNew">
+      <div class="h-plus"></div>
+      <div class="v-plus"></div>
+      <button id="addNewButton"></button>
+    </div>
 
     <button id="done" type="button">Done</button>
     <button id="reset" type="button">Reset</button>
@@ -144,15 +147,44 @@
     >
       Continue
     </button>
-    <!--Will be popup form to allow for user created website input -->
-    <!--
-    <form  class="newAddress">
-      Address Name:<br />
-      <input type="text" name="addressName" /><br />
-      URL:<br />
-      <input type="text" name="url" /><br />
-      <input type="Submit" value="submit" />
-    </form>
-    -->
+    <div id="Modal" class="modal">
+      <div class="mContent">
+        <span class="closeModal">&times;</span>
+        <p>
+          <form class="newAddress" onsubmit = "addNewSite()">
+          Address Name: <br/>
+          <input type="text" name="addressName" /><br />
+          URL: <br/>
+          <input type="text" name="url" /><br />
+          <input id = "modalSubmit" type="Submit" value="submit" />
+        </form>
+      </p>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("Modal");
+      var btn = document.getElementById("addNewButton");
+      var span = document.getElementsByClassName("closeModal")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      };
+      span.onclick = function() {
+        modal.style.display = "none";
+      };
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      function addNewSite(){
+        var newDiv = document.createElement("div");
+        // and give it some content 
+        var newContent = document.createTextNode();
+        // add the text node to the newly created div
+        newDiv.appendChild(newContent);
+        document.body.appendChild(newDiv);
+      }
+    </script>
   </body>
 </html>

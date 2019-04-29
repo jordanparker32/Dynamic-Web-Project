@@ -1,15 +1,15 @@
 html {
-  background-color: #f5f6fa;
+  background-color: #272727;
 }
 h1 {
   text-align: center;
-  color: #2f3640;
+  color: #ffffff;
   font-family: "Trebuchet MS";
 }
 body {
   text-align: center;
   font-family: "Trebuchet MS";
-  color: #2f3640;
+  color: #ffffff;
 }
 img {
   padding: 5px;
@@ -20,7 +20,7 @@ img {
 }
 
 form {
-  color: #2f3640;
+  color: #ffffff;
 }
 .footer {
   font-family: "Trebuchet MS";
@@ -37,7 +37,8 @@ form {
   position: absolute;
   z-index: 9;
   background-color: #e0fbfc;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #373f51;
+  color: #000000;
   border-radius: 8px;
   opacity: 0.95;
   text-align: center;
@@ -47,7 +48,7 @@ form {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #fe4a49;
+  background-color: #eb4d4b;
   color: #dcdde1;
   top: 200px;
 }
@@ -56,7 +57,8 @@ form {
   position: absolute;
   z-index: 9;
   background-color: #e0fbfc;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #373f51;
+  color: #000000;
   border-radius: 8px;
   opacity: 0.95;
   text-align: center;
@@ -66,7 +68,7 @@ form {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #0097e6;
+  background-color: #f0932b;
   color: #dcdde1;
   top: 300px;
 }
@@ -75,7 +77,8 @@ form {
   position: absolute;
   z-index: 9;
   background-color: #e0fbfc;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #373f51;
+  color: #000000;
   border-radius: 8px;
   opacity: 0.95;
   text-align: center;
@@ -85,7 +88,7 @@ form {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #273c75;
+  background-color: #30336b;
   color: #dcdde1;
   top: 400px;
 }
@@ -94,7 +97,8 @@ form {
   position: absolute;
   z-index: 9;
   background-color: #e0fbfc;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #373f51;
+  color: #000000;
   border-radius: 8px;
   opacity: 0.95;
   text-align: center;
@@ -104,7 +108,7 @@ form {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #c23616;
+  background-color: #4834d4;
   color: #dcdde1;
   top: 500px;
 }
@@ -113,7 +117,8 @@ form {
   position: absolute;
   z-index: 9;
   background-color: #e0fbfc;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #373f51;
+  color: #000000;
   border-radius: 8px;
   opacity: 0.95;
   text-align: center;
@@ -123,7 +128,7 @@ form {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #2f3640;
+  background-color: #e056fd;
   color: #dcdde1;
   top: 600px;
 }
@@ -132,9 +137,10 @@ form {
   position: absolute;
   z-index: 9;
   background-color: #e0fbfc;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #373f51;
   border-radius: 8px;
   opacity: 0.95;
+  color: #000000;
   text-align: center;
   top: 200px;
   left: 175px;
@@ -143,8 +149,8 @@ form {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #44bd32;
-  color: #dcdde1;
+  background-color: #6ab04c;
+  color: #ffffff;
   top: 200px;
   left: 175px;
 }
@@ -155,27 +161,52 @@ h4 {
   top: 165px;
 }
 h3 {
-  background-color: #00a8ff;
+  background-color: #ffd700;
 }
 .rectangle {
   height: 400px;
   width: 200px;
-  background-color: #fbc531;
+  background-color: #ffd700;
   position: absolute;
   top: 210px;
   right: 25px;
-  border: 2.5px solid #292f36;
+  border: 2.5px solid #0000;
   border-radius: 8px;
 }
 .addNew {
   height: 50px;
   width: 50px;
-  background-color: #0097e6;
+  background-color: #ffd700;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+#addNewButton {
+  bottom: 25px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+}
+.h-plus {
+  position: relative;
+  background-color: #ffffff;
+  width: 50%;
+  height: 12.5%;
+  left: 25%;
+  top: 43.75%;
+}
+.v-plus {
+  position: relative;
+  background-color: #ffffff;
+  width: 12.5%;
+  height: 50%;
+  left: 43.75%;
+  top: 12.5%;
 }
 
 #done {
@@ -198,4 +229,35 @@ h3 {
   position: absolute;
   bottom: 10px;
   right: 600px;
+}
+.newAddress {
+  position: relative;
+  font-family: "Trebuchet MS";
+  text-align: left;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mContent {
+  background-color: #272727;
+  margin: 15% auto;
+  padding: 5px;
+  border: 2px solid #ffd700;
+  width: 12%;
+}
+.closeModal {
+  color: #ffd700;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
