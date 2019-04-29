@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <body>
     <h1>Digital Address Book</h1>
-    <!-- <img src="placeholder-circle.png" alt="placeholder circle image" /> -->
+    <img src="USM_1970_Rework.png" alt="placeholder circle image" />
     <br />
     <form action="/choose_sites.html" method="post">
       Username:<br />
