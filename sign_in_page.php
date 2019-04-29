@@ -1,4 +1,3 @@
-
 <?php include('server.php'); ?>
 <?php
 // define variables and set to empty values
@@ -32,7 +31,7 @@ function test_input($data) {
       Username:<br />
       <input type="text" name="username" required="required" placeholder="" autofocus required /><br />
       Password:<br />
-      <input type="text" name="pass" required="required" placeholder="" required/><br /><br />
+      <input type="text" name="password" required="required" placeholder="" required/><br /><br />
       <input type="submit" value="Submit" />
       <!--<input type="reset" /> -->
     </form>
