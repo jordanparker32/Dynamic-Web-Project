@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<?php include('server.php'); ?>
+
 <html>
   <head>
     <title>Sign-Up</title>
@@ -10,16 +12,15 @@
     <br />
     <h3>Please enter required infomation below.</h3>
     <form action="choose_sites.html" method="post">
-      First Name:<br />
-      <input type="text" name="firstName" value="" /><br />
-      Last Name:<br />
-      <input type="text" name="lastName" value="" /><br />
       Username:<br />
-      <input type="text" name="firstName" value="" /><br />
+      <input type="text" name="username"/><br />
+      Email:<br />
+      <input type="text" name="email"/><br />
       Password:<br />
-      <input type="text" name="firstName" value="" /><br />
+      <input type="text" name="password" /><br />
+      <br>
       <input type="submit" value="Submit" />
-      <input type="reset" />
+      <!--<input type="reset" /> --> 
     </form>
   </body>
 </html>
