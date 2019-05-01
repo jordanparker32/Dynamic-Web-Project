@@ -10,6 +10,37 @@
     <h1>
       Welcome to Your Digital Address Book!
     </h1>
+
+    <div>
+      <form method="get" id="gform" action="http://www.google.com/search">
+        <div>
+          <table border="0" align="center" cellpadding="0">
+            <tr><td>
+            <input type="text"   name="q" size="25" style="color:#808080;"
+            maxlength="255" value="Google search.."
+            onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+            <input type="submit" value="Go!" />
+            <input type="hidden" name="sitesearch" value="yoursite.com" /></td></tr>
+          </table>
+        </div>
+      </form>
+    </div>
+
+    <div>
+        <form method="get" id="sform" action="https://www.usm.edu/Search">
+          <div>
+            <table border="0" align="center" cellpadding="0">
+              <tr><td>
+              <input type="text"   name="q" size="25" style="color:#808080;"
+              maxlength="255" value="Southern Miss search.."
+              onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+              <input type="submit" value="Go!" />
+              <input type="hidden" name="sitesearch" value="yoursite.com" /></td></tr>
+            </table>
+          </div>
+        </form>
+      </div>
+    
     <br />
     <br />
     <h3>Here are the contents of your current address book.</h3>
