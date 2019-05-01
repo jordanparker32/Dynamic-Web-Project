@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
      session_register("myusername");
      $_SESSION['login_user'] = $myusername;
 
-     header("location: home.html");
+     header("location: choose_sites.html");
   }else {
      $error = "Your Login Name or Password is invalid";
   }
@@ -34,8 +34,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <head>
     <title>Digital Address Book</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="homeStyleSheet.css" />
   </head>
-  <link rel="stylesheet" type="text/css" href="homeStyleSheet.css" />
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+</script>
 
   <body>
     <h1>Digital Address Book</h1>
@@ -45,7 +56,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       Username:<br />
       <input type="text" name="username" required="required" placeholder="" autofocus required /><br />
       Password:<br />
-      <input type="text" name="password" required="required" placeholder="" required/><br /><br />
+      <input type="password" name="password" value="passwrd" id="myInput"><br>
+      <input type="checkbox" onclick="myFunction()">Show Password
+      <br><br>
       <input type="submit" value="Submit" />
       <!--<input type="reset" /> -->
     </form>
